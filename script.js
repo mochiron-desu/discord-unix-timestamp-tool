@@ -109,7 +109,7 @@ document.querySelector("#push").onclick = function () {
                     <tr>
                         <td = "type">Default</td>
                         <td class = "format">&lt;t:${unix_time}&gt;</td>
-                        <td id = "output">${monthNames[new_date.getMonth()]} ${new_date.getDate()}, ${new_date.getFullYear()} ${new_date.toLocaleString('en-IN', { hour: 'numeric', hour12: true })}</td>
+                        <td id = "output">${monthNames[new_date.getMonth()]} ${new_date.getDate()}, ${new_date.getFullYear()} ${new_date.toLocaleString('en-IN')}</td>
                     </tr>
                     <tr>
                         <td>Short Time</td>
@@ -139,7 +139,7 @@ document.querySelector("#push").onclick = function () {
                     <tr>
                         <td>Long Date/Time</td>
                         <td class = "format">&lt;t:${unix_time}:F&gt;</td>
-                        <td class = "output">${weekdays[new_date.getDay()-1]}, ${monthNames[new_date.getMonth()]} ${new_date.getDate()}, ${new_date.getFullYear()} ${new_date.toLocaleString('en-IN', { hour: 'numeric', hour12: true })}</td>
+                        <td class = "output">${weekdays[new_date.getDay() - 1]}, ${monthNames[new_date.getMonth()]} ${new_date.getDate()}, ${new_date.getFullYear()} ${new_date.toLocaleString('en-IN', { hour: 'numeric', hour12: true })}</td>
                     </tr>
                     <tr>
                         <td>Relative Time</td>
