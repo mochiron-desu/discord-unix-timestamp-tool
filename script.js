@@ -139,7 +139,7 @@ document.querySelector("#push").onclick = function () {
                     <tr>
                         <td>Long Date/Time</td>
                         <td class = "format">&lt;t:${unix_time}:F&gt;</td>
-                        <td class = "output">${weekdays[new_date.getDay()]}, ${monthNames[new_date.getMonth()]} ${new_date.getDate()}, ${new_date.getFullYear()} ${new_date.toLocaleString('en-IN', { hour: 'numeric', hour12: true })}</td>
+                        <td class = "output">${weekdays[new_date.getDay()-1]}, ${monthNames[new_date.getMonth()]} ${new_date.getDate()}, ${new_date.getFullYear()} ${new_date.toLocaleString('en-IN', { hour: 'numeric', hour12: true })}</td>
                     </tr>
                     <tr>
                         <td>Relative Time</td>
@@ -150,7 +150,7 @@ document.querySelector("#push").onclick = function () {
     var formatcollection = document.getElementsByClassName("format");
     for (let i = 0; i < formatcollection.length; i++) {
         formatcollection[i].onclick = function () {
-            navigator.clipboard.writeText(`${formatcollection[i].innerHTML}`)
+            navigator.clipboard.writeText(`${formatcollection[i].innerText}`)
         }
     }
 }
