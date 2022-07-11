@@ -1,0 +1,143 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,
+            #1f1e20,
+            #211b23);
+}
+
+.heading-container {
+    background-color: aliceblue;
+    padding: 30px 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.heading-container span {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.content-container {
+    display: table;
+    background-color: aliceblue;
+    padding: 30px 25px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.table-row {
+    display: table-row;
+}
+
+.user-input {
+    display: table-cell;
+    width: 50%;
+    background-color: rgb(176, 207, 235);
+    padding: 20px 15px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.user-input span {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.user-input td {
+    padding: 5px 5px;
+    align-content: center;
+}
+
+.user-input input {
+    width: auto;
+    padding: 2px 2px;
+    border: none;
+    border-radius: 2px;
+}
+
+.user-input button {
+    padding: 10px 20px;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    background-color: aliceblue;
+    color: #1f1e20;
+    border: none;
+    border-radius: 3px;
+}
+
+.user-input button:hover {
+    background-color: rgb(122, 184, 238);
+}
+
+.output-container {
+    display: table-cell;
+    width: 50%;
+    padding: 20px 15px;
+    font-size: smaller;
+    align-items: center;
+}
+
+.output-container td {
+    padding: 5px 5px;
+}
+
+.output-container .type {
+    column-width: 20%;
+}
+
+.output-container .format {
+    column-width: 10%;
+}
+
+.output-container .output {
+    column-width: 20%;
+}
+
+.output-container table {
+    border: 2px;
+    border-color: #1f1e20;
+    border-style: solid;
+    padding: 0%;
+}
+
+.output-container th {
+    font-size: 16px;
+    text-align: left;
+    border: solid black 2px;
+    padding: 5px;
+}
+
+.output-container table td {
+    padding: 7px;
+    border: solid black 1px;
+}
+
+.format {
+    font-family: "consolas";
+    background-color: #343942;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+td.format:hover {
+    background-color: rgb(23, 23, 19);
+}

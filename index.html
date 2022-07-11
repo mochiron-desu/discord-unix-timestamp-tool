@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Discord Unix Timestamp Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading-container">
+        <span>
+            Discord Unix Timestamp Generator
+        </span>
+    </div>
+    <div class="content-container">
+        <div class="table-row">
+            <div class="user-input">
+                <span>Input</span>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="year-input">Year</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="YYYY" id="year-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="month-input">Month</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="MM" id="month-input" min="1" max="12">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="day-input">Day</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="DD" id="day-input" min="1" max="31">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="input-time">Time (HH:MM)</label>
+                        </td>
+                        <td>
+                            <input type="time" value="00:00" id="input-time">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="input-time-sec">Seconds</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" max="59" id="input-time-sec" placeholder="SS">
+                        </td>
+                        <td><button id="reset">🗑️</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="push">Enter</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="output-container">
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
